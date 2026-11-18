@@ -1,0 +1,15 @@
+title = "Project Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Obvious placeholders"
+regexTarget = "line"
+regexes = [
+  '''changeme''',
+  '''your[-_ ]?(api[-_ ]?)?key''',
+  '''example[_-]?secret''',
+  '''dummy[_-]?token''',
+  '''placeholder''',
+]

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{BRAND}} – appen medlemmene faktisk trener i</title>
+<meta name="description" content="{{BRAND}} er treningsloggen, innsjekken og medlemsregisteret for det uavhengige treningssenteret. Laget for norske sentre, på norsk.">
+<meta name="theme-color" content="#0A0A0C">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="{{BRAND}} – appen medlemmene faktisk trener i">
+<meta property="og:description" content="Treningslogg, innsjekk og medlemsregister for det uavhengige treningssenteret.">
+<meta property="og:image" content="{{SITE_URL}}/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="{{SITE_URL}}/">
+<link rel="canonical" href="{{SITE_URL}}/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+{{PRELOADS}}
+<style>{{CSS}}</style>
+</head>
+<body>
+<a class="skip" href="#innhold">Hopp til innholdet</a>
+
+<header class="top" id="top">
+  <a class="mark" href="#top" aria-label="{{BRAND}}, til toppen">{{LOGO}}<span>{{BRAND}}</span></a>
+  <nav aria-label="Hovedmeny">
+    <a href="#medlem">Medlemmet</a>
+    <a href="#senter">Senteret</a>
+    <a href="#status">Status</a>
+  </nav>
+  <a class="btn btn--sm" href="{{APP_URL}}">Prøv appen</a>
+</header>
+
+<main id="innhold">
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero__art" aria-hidden="true">{{img:hero|(min-width: 60rem) 100vw, 160vw||hero__img|eager}}</div>
+  <div class="hero__in wrap">
+    <h1 id="hero-h">Appen medlemmene faktisk trener&nbsp;i.</h1>
+    <p class="lead">{{BRAND}} er treningsloggen, innsjekken og medlemsregisteret for det uavhengige treningssenteret. Laget for norske sentre, på norsk, for økta klokka seks en vintermorgen.</p>
+    <div class="row" id="hero-cta">
+      <a class="btn" href="{{APP_URL}}">Prøv medlemsappen {{ARROW}}</a>
+      <a class="btn btn--ghost" href="#senter">Se hva senteret får</a>
+    </div>
+  </div>
+  <p class="hero__note wrap">Klart i dag: treningslogg, kvittering med neste vekt, innsjekk, medlemsregister og import fra Strong, Hevy og FitNotes.</p>
+</section>
+
+<section class="scene" id="medlem" aria-labelledby="medlem-h">
+  <div class="wrap scene__head">
+    <h2 id="medlem-h">Ett sett om&nbsp;gangen.</h2>
+    <p class="lead">Mellom to sett har medlemmet litt pust og kritt på hendene. Appen viser det som skal løftes, og hva det er å slå. Resten venter.</p>
+  </div>
+  <div class="wrap scene__grid">
+    <ol class="steps">
+      <li class="step">
+        <h3>Dagens økt står klar.</h3>
+        <p>Programmet vet hvilken uke det er og hva som står på planen. Medlemmet ser øvelsene, omtrent hvor lang tid det tar, og starter med ett trykk.</p>
+        <div class="step__shot">{{shot:01|I dag-skjermen med dagens økt fra programmet og en knapp for å starte}}</div>
+      </li>
+      <li class="step">
+        <h3>Vekten står der allerede.</h3>
+        <p>Settet åpner med et forslag til vekt og repetisjoner, regnet ut fra forrige gang, og skivene per side står under. Ett trykk logger det. Hvilen teller ned etterpå, og en ny rekord vises i gull.</p>
+        <div class="step__shot">{{shot:02|Aktiv økt med benkpress, loggførte sett, vekt og repetisjoner fylt inn, skivene per side og knappen Loggfør sett}}</div>
+      </li>
+      <li class="step">
+        <h3>Kvitteringen viser hva som ble bedre.</h3>
+        <p>Etter økta: nye rekorder først, så volum og hver øvelse sammenlignet med forrige gang. Med neste vekt allerede regnet ut.</p>
+        <div class="step__shot">{{shot:03|Kvittering etter en fullført økt med rekorder og neste vekt}}</div>
+      </li>
+      <li class="step">
+        <h3>Fremgang er en kurve, ikke en&nbsp;liste.</h3>
+        <p>Hver øvelse har sin egen historikk med beregnet 1RM og beste sett per økt, så medlemmet ser om benkpressen faktisk går oppover, uke for uke.</p>
+        <div class="step__shot">{{shot:04|Progresjon med ukevolum og beregnet 1RM over tid}}</div>
+      </li>
+    </ol>
+    <div class="phone" aria-hidden="true">
+      <div class="phone__glass">
+        <div class="screen">{{shot:01|}}</div>
+        <div class="screen">{{shot:02|}}</div>
+        <div class="screen">{{shot:03|}}</div>
+        <div class="screen">{{shot:04|}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rack" aria-labelledby="rack-h">
+  <div class="rack__art" aria-hidden="true">{{img:rack|100vw||rack__img|}}</div>
+  <div class="wrap rack__in">
+    <h2 id="rack-h"><span class="sr">I stedet for </span><span class="rack__no"><s>26,5&nbsp;kg</s></span><span class="sr">:</span> 26&nbsp;kg.</h2>
+    <div class="rack__body">
+      <p>En fast regel om å legge på 2,5&nbsp;kg gjør 24&nbsp;kg manualer om til 26,5&nbsp;kg. Den vekten har ikke de vanlige stativene.</p>
+      <p>{{BRAND}} leser stativet ut fra vektene medlemmet faktisk bruker, og foreslår neste vekt som trolig finnes i stativet: 24 blir 26, 22,5 blir 25.</p>
+      <p class="quote">«Neste gang: 26&nbsp;kg × 6–8»<span>eksempel fra kvitteringen i appen</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="ledger" id="flytt" aria-labelledby="flytt-h">
+  <div class="wrap ledger__grid">
+    <div class="ledger__text">
+      <h2 id="flytt-h">Historikken flytter&nbsp;med.</h2>
+      <p class="lead">Medlemmer som har logget i Strong, Hevy eller FitNotes tar med seg treningshistorikken. Forhåndsvisningen viser hva som kommer inn før noe lagres, og samme fil to ganger legger ikke til noe.</p>
+    <dl class="book">
+      <div class="book__row">
+        <dt>Øvelser på norsk</dt><dd class="num">254</dd>
+      </div>
+      <div class="book__row">
+        <dt>Ferdige programmer</dt><dd class="num">14</dd>
+      </div>
+      <div class="book__row book__row--bar">
+        <dt>Øvelsesnavn i ekte eksporter vi testet, som kjennes igjen</dt><dd class="num">258 <small>av 323</small></dd>
+        <dd class="book__bar"><div class="bar" role="img" aria-label="80 prosent kjennes igjen"><i></i></div></dd>
+      </div>
+      <div class="book__row">
+        <dt>Formater</dt><dd>Strong · Hevy · FitNotes</dd>
+      </div>
+    </dl>
+    </div>
+    <div class="mini">{{shot:06|Skjermen Importer treningshistorikk med fremgangsmåte for Strong, Hevy og FitNotes}}</div>
+  </div>
+</section>
+
+<section class="gym" id="senter" aria-labelledby="senter-h">
+  <div class="wrap gym__intro">
+    <div class="gym__photo">{{img:owner|(min-width: 60rem) 40vw, 100vw||gym__img|}}</div>
+    <div class="gym__text">
+      <h2 id="senter-h">Senteret ditt. Ikke en&nbsp;kjede.</h2>
+      <p class="lead">Konsollen er laget for senteret med én resepsjon og en eier som også står i den. Medlemmer, innsjekk og utstyr på ett sted, på norsk.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="console">{{shot:08|Innstillinger i konsollen: senteret krysser av utstyret det har, fra vektstang til tredemøller|wide}}</div>
+  </div>
+  <ul class="wrap feats">
+    <li><h3>Medlemsregisteret</h3><p>Hvem som er aktive, og hvor lenge det er siden de var innom. Inviter nye medlemmer med en lenke.</p></li>
+    <li><h3>Innsjekk</h3><p>Medlemmet viser en kode i resepsjonen. Den byttes hvert 30. sekund og virker én gang. Ett åpent besøk per medlem om gangen.</p></li>
+    <li><h3>Utstyret ditt</h3><p>Kryss av for det senteret har. Medlemmene kan velge å se bare øvelser som kan gjøres hos dere.</p></li>
+    <li><h3>Signerte webhooks</h3><p>Innsjekk og nye medlemmer sendes til systemene dine som hendelser, signert per senter.</p></li>
+  </ul>
+  <div class="wrap gym__pair">
+    <figure class="door">{{img:door|(min-width: 60rem) 40vw, 100vw||door__img|}}</figure>
+    <div class="gym__check">
+      <div class="mini">{{shot:05|Sjekk inn-skjermen med QR-kode og en kode som byttes hvert 30. sekund}}</div>
+      <div>
+        <h3>Koden i resepsjonen.</h3>
+        <p>Medlemmet åpner Sjekk inn og viser koden, og dere taster den inn i konsollen. Den byttes hvert 30. sekund, så en skjermdump fra i går slipper ingen inn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="start" id="start" aria-labelledby="start-h">
+  <div class="wrap start__head">
+    <h2 id="start-h">Slik blir dere pilotsenter.</h2>
+    <p class="lead">Ingen installasjon i resepsjonen og ingen app å laste ned for medlemmene.</p>
+  </div>
+  <ol class="wrap tl">
+    <li><h3>Vi setter opp senteret for deg.</h3><p>Du får tilgang til konsollen og kan invitere medlemmene.</p></li>
+    <li><h3>Du krysser av for utstyret.</h3><p>Det avgjør hvilke øvelser medlemmene kan se og få forslag om.</p></li>
+    <li><h3>Medlemmene får en invitasjon.</h3><p>Appen åpnes i nettleseren, uten nedlasting. Historikken fra Strong, Hevy eller FitNotes kan tas med.</p></li>
+    <li><h3>Første innsjekk.</h3><p>Medlemmet viser koden i resepsjonen. Du ser besøket i konsollen.</p></li>
+  </ol>
+</section>
+
+<section class="status" id="status" aria-labelledby="status-h">
+  <div class="wrap">
+    <h2 id="status-h">Det som virker i dag. Og det som ikke gjør det&nbsp;ennå.</h2>
+    <div class="status__grid">
+      <div class="status__col">
+        <h3><span class="dot dot--live" aria-hidden="true"></span>Klart i dag</h3>
+        <ul>
+          <li>Treningslogg med forslag til vekt, hviletimer og logging uten nett</li>
+          <li>Kvittering med rekorder og neste vekt som finnes i stativet</li>
+          <li>Historikk og beregnet 1RM per øvelse</li>
+          <li>Import fra Strong, Hevy og FitNotes</li>
+          <li>254 øvelser på norsk og 14 ferdige programmer</li>
+          <li>Innsjekk med engangskode</li>
+          <li>Medlemsregister, invitasjoner og utstyrsprofil</li>
+          <li>Signerte webhooks for innsjekk og nye medlemmer</li>
+        </ul>
+      </div>
+      <div class="status__col status__col--next">
+        <h3><span class="dot" aria-hidden="true"></span>Under arbeid</h3>
+        <ul>
+          <li>Medlemskap og betaling med Vipps</li>
+          <li>Apper i App Store og Google Play</li>
+          <li>Innlogging med passnøkkel</li>
+          <li>Coach som foreslår, mens medlemmet bestemmer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promise" aria-labelledby="promise-h">
+  <div class="promise__art" aria-hidden="true">{{img:bench|100vw||promise__img|}}</div>
+  <div class="wrap promise__in">
+    <h2 id="promise-h">Settene venter på&nbsp;nettet.</h2>
+    <p class="lead">Mister telefonen nettet midt i økta, lagres settet på telefonen og sendes når dekningen er tilbake. Medlemmet kan fortsette å trene.</p>
+  </div>
+</section>
+
+<section class="close" id="kontakt" aria-labelledby="close-h">
+  <div class="close__art" aria-hidden="true">{{img:chalk|100vw||close__img|}}</div>
+  <div class="wrap close__in">
+    <h2 id="close-h">Bli et av de første&nbsp;sentrene.</h2>
+    <p class="lead">Vi tar inn noen få uavhengige sentre som pilot i vinter. Dere får appen og konsollen, og det dere bruker mest, bestemmer hva vi bygger videre.</p>
+    <div class="row">
+      {{CONTACT_BUTTON}}
+      <a class="btn{{APP_BTN_MOD}}" href="{{APP_URL}}">Prøv medlemsappen {{ARROW}}</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot wrap">
+  <p class="mark">{{LOGO}}<span>{{BRAND}}</span></p>
+  <p>Laget for norske treningssentre. Fotografiene er illustrasjoner laget med KI; skjermbildene er fra appen. Ingen informasjonskapsler, ingen sporing.</p>
+  <nav aria-label="Logg inn"><a href="{{APP_URL}}">Logg inn som medlem</a><a href="{{CONSOLE_URL}}">Logg inn for senteret</a></nav>
+</footer>
+
+<div class="dock" id="dock"><a class="btn" href="{{APP_URL}}">Prøv medlemsappen {{ARROW}}</a></div>
+<script>{{JS}}</script>
+</body>
+</html>
