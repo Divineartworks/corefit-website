@@ -78,12 +78,12 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--ember);outline-offset
 /* member scene: sticky phone, steps scroll past */
 .scene{padding:clamp(5rem,12vw,10rem) 0 clamp(3rem,8vw,6rem)}
 .scene__head .lead{margin-top:1.5rem}
-.scene__grid{display:grid;grid-template-columns:minmax(0,32rem) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);margin-top:clamp(2rem,5vw,4rem);timeline-scope:--s1,--s2,--s3,--s4}
+.scene__grid{display:grid;grid-template-columns:minmax(0,32rem) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);margin-top:clamp(2rem,5vw,4rem);timeline-scope:--s1,--s2,--s3,--s4,--s5}
 .steps{list-style:none;margin:0;padding:0 0 0 2rem;position:relative}
 .steps::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--hair)}
 .steps::after{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--ember);transform-origin:50% 0;transform:scaleY(1)}
 .step{min-height:72svh;display:flex;flex-direction:column;justify-content:center;gap:1rem;max-width:30rem}
-.step:nth-child(1){view-timeline-name:--s1}.step:nth-child(2){view-timeline-name:--s2}.step:nth-child(3){view-timeline-name:--s3}.step:nth-child(4){view-timeline-name:--s4}
+.step:nth-child(1){view-timeline-name:--s1}.step:nth-child(2){view-timeline-name:--s2}.step:nth-child(3){view-timeline-name:--s3}.step:nth-child(4){view-timeline-name:--s4}.step:nth-child(5){view-timeline-name:--s5}
 .step h3{font-size:clamp(1.8rem,3.2vw,3rem);font-weight:900;letter-spacing:-.025em;line-height:1.05}
 .step p{color:var(--ink-2);font-size:1.0625rem}
 .step__shot{display:none}
@@ -249,6 +249,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--ember);outline-offset
     .screen:nth-child(2){animation:cf-wipe linear both;animation-timeline:--s2;animation-range:entry 80% contain 5%}
     .screen:nth-child(3){animation:cf-wipe linear both;animation-timeline:--s3;animation-range:entry 80% contain 5%}
     .screen:nth-child(4){animation:cf-wipe linear both;animation-timeline:--s4;animation-range:entry 80% contain 5%}
+    .screen:nth-child(5){animation:cf-wipe linear both;animation-timeline:--s5;animation-range:entry 80% contain 5%}
     @keyframes cf-rise{from{transform:translateY(3rem) scale(.96)}to{transform:none}}
     .gym__photo,.door,.mini{animation:cf-rise linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
   }
